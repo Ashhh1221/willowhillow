@@ -1,0 +1,357 @@
+.about-page {
+  padding: 64px 24px 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-sheet {
+  width: min(100%, 1040px);
+  padding: 34px clamp(26px, 5vw, 72px) 48px;
+  background: #f3f1ee;
+  box-shadow: 0 22px 60px #1918170b;
+}
+
+.profile-topline {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #c9c5c0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.profile-hero {
+  padding: 38px 0 32px;
+  border-bottom: 1px solid #c9c5c0;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 40px;
+}
+
+.profile-image {
+  width: clamp(200px, 27vw, 300px);
+  margin: 0;
+}
+
+.profile-image img {
+  width: 100%;
+  aspect-ratio: 0.84;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+.profile-image figcaption {
+  margin-top: 9px;
+  color: #77716d;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-kicker {
+  margin: 25px 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-identity h1 {
+  margin: 0;
+  font: 400 clamp(45px, 5.5vw, 76px) / 1 Georgia, serif;
+  letter-spacing: -0.075em;
+}
+
+.profile-identity .period {
+  color: #94716f;
+}
+
+.profile-role {
+  margin: 12px 0 0;
+  color: #625d58;
+  font-size: 15px;
+}
+
+.profile-index {
+  align-self: start;
+  text-align: right;
+}
+
+.profile-index > span {
+  font: 400 clamp(130px, 17vw, 260px) / 0.78 "DM Sans", Arial, sans-serif;
+  letter-spacing: -0.11em;
+}
+
+.profile-index p {
+  margin: 34px 0 0;
+  font: 20px / 1.4 Georgia, serif;
+}
+
+.profile-about,
+.profile-interests {
+  padding-top: 36px;
+}
+
+.profile-details h2 {
+  margin: 0 0 18px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.profile-about p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.profile-interests ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 30px;
+  list-style: none;
+  font-size: 15px;
+}
+
+/* Archive card */
+
+.profile-connect {
+  min-height: 230px;
+  margin-top: 42px;
+  padding: 24px 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #d7d3ce;
+  color: #191817;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.profile-connect:hover,
+.profile-connect:focus-visible {
+  background: #cbc5be;
+}
+
+.connect-label {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.connect-main {
+  margin-top: 34px;
+  position: relative;
+  z-index: 1;
+  font: 25px / 1.2 Georgia, serif;
+}
+
+.connect-action {
+  margin-top: auto;
+  padding-top: 13px;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #99938d;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.connect-action span {
+  margin-left: 14px;
+}
+
+.connect-pattern {
+  width: 180px;
+  height: 132px;
+  position: absolute;
+  top: 25%;
+  right: 7%;
+  background-image: radial-gradient(#191817 1.2px, transparent 1.3px);
+  background-size: 11px 11px;
+  opacity: 0.8;
+}
+
+/* Counts and footer */
+
+.profile-bottom {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-bottom > div {
+  padding: 12px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-bottom > div + div {
+  padding-left: 28px;
+  border-left: 1px solid #c9c5c0;
+}
+
+.profile-bottom div > span {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.profile-bottom strong {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+
+.profile-bottom strong span {
+  color: #8f8983;
+  font-size: 17px;
+  vertical-align: top;
+}
+
+.about-footer {
+  padding: 24px clamp(24px, 4vw, 64px) 40px;
+  border-top: 1px solid #d2cfca;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #625d58;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-footer a {
+  text-decoration: none;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+  .about-page {
+    padding: 0 0 60px;
+  }
+
+  .profile-sheet {
+    width: 100%;
+    padding: 28px 24px 40px;
+    box-shadow: none;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr 0.65fr;
+    gap: 18px;
+  }
+
+  .profile-image {
+    width: min(100%, 260px);
+  }
+
+  .profile-index > span {
+    font-size: clamp(96px, 21vw, 170px);
+  }
+
+  .profile-index p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .profile-identity h1 {
+    font-size: clamp(40px, 7vw, 60px);
+  }
+
+  .connect-pattern {
+    width: 140px;
+    height: 120px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 490px) {
+  .profile-sheet {
+    padding: 22px 20px 36px;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr 0.65fr;
+    gap: 10px;
+    padding-top: 26px;
+  }
+
+  .profile-image {
+    width: 100%;
+  }
+
+  .profile-index > span {
+    font-size: clamp(86px, 23vw, 118px);
+  }
+
+  .profile-index p {
+    font-size: 12px;
+  }
+
+  .profile-identity h1 {
+    font-size: clamp(34px, 9vw, 48px);
+  }
+
+  .profile-kicker {
+    font-size: 10px;
+  }
+
+  .profile-role {
+    font-size: 13px;
+  }
+
+  .profile-about p {
+    font-size: 16px;
+  }
+
+  .profile-interests ul {
+    gap: 12px 20px;
+    font-size: 14px;
+  }
+
+  .profile-connect {
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  .connect-main {
+    max-width: 175px;
+    font-size: 22px;
+  }
+
+  .connect-pattern {
+    width: 100px;
+    height: 105px;
+    top: 30%;
+    right: 6%;
+    background-size: 9px 9px;
+  }
+
+  .profile-bottom strong {
+    font-size: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-connect {
+    transition: none;
+  }
+}

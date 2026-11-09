@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Willowfellow.">
+  <title>Contact — Willowfellow</title>
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="contact.css">
+  <script defer src="home.js"></script>
+  <script defer src="contact.js"></script>
+</head>
+<body>
+  <div class="site-shell contact-shell" id="top">
+    <header class="site-header">
+      <a class="wordmark" href="home.html" aria-label="Willowfellow home">
+        willowfellow<span class="wordmark-dot">.</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="about.html">About Me</a>
+        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+      </nav>
+
+      <span class="header-index" aria-hidden="true">Visual archive / 01</span>
+    </header>
+
+    <main class="contact-main">
+      <p class="contact-overline">A note to Willowfellow / 01</p>
+      <h1>Good things begin<br><em>with a conversation.</em></h1>
+      <p class="contact-intro">
+        Share a little about what you have in mind.
+      </p>
+
+      <form class="letter-form" id="contact-form">
+        <div class="letter-topline">
+          <span>New inquiry</span>
+          <span>Willowfellow / Contact</span>
+        </div>
+
+        <p class="letter-greeting">Hello there,</p>
+
+        <p class="letter-line">
+          My name is
+          <label class="sr-only" for="contact-name">Your name</label>
+          <input id="contact-name" name="name" type="text"
+                 placeholder="Your name" autocomplete="name"
+                 maxlength="100" required>.
+        </p>
+
+        <p class="letter-line">
+          I would like to talk about
+          <label class="sr-only" for="contact-project">Project type</label>
+          <select id="contact-project" name="project" required>
+            <option value="" disabled selected>Choose a topic</option>
+            <option>Photography</option>
+            <option>Creative collaboration</option>
+            <option>Gallery inquiry</option>
+            <option>Something else</option>
+          </select>.
+        </p>
+
+        <p class="letter-line">
+          You can reach me at
+          <label class="sr-only" for="contact-email">Your email address</label>
+          <input id="contact-email" name="email" type="email"
+                 placeholder="Your email address" autocomplete="email"
+                 maxlength="200" required>.
+        </p>
+
+        <label class="message-label" for="contact-message">
+          A little more about your idea
+        </label>
+        <textarea id="contact-message" name="message" rows="5"
+                  placeholder="Tell me what you are thinking about…"
+                  maxlength="3000" required></textarea>
+
+        <div class="letter-signoff">
+          <p>Thank you,<br><span>Your future collaborator</span></p>
+          <button type="submit">
+            Prepare message <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <p class="form-status" id="form-status"
+           role="status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <div class="contact-filmstrip" aria-label="Selected gallery photographs">
+      <img src="gallery/Col 9.jpg" alt="Portrait study">
+      <img src="gallery/Col 6.jpg" alt="Open landscape">
+      <img src="gallery/Col 10.jpg" alt="Window light portrait">
+      <img src="gallery/p3.jpg" alt="Urban passage">
+      <img src="gallery/col 12.jpg" alt="Hands and fabric">
+      <img src="gallery/col 14.jpg" alt="Outdoor portrait">
+    </div>
+
+    <footer class="contact-footer">
+      <div class="contact-footer-inner">
+        <a class="footer-brand" href="home.html">wf<span>.</span></a>
+
+        <div>
+          <p>Explore</p>
+          <a href="home.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Me</a>
+        </div>
+
+        <div>
+          <p>Willowfellow</p>
+          <span>A visual journal of quiet moments and stories.</span>
+        </div>
+
+        <a class="footer-top" href="#top">Back to top ↑</a>
+      </div>
+
+      <div class="contact-copyright">
+        © <span class="year">2026</span> Willowfellow
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

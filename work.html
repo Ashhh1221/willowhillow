@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A closer look at a work in the Willowfellow collection.">
+  <title>Artwork — Willowfellow</title>
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script defer src="home.js"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="home.html" aria-label="Willowfellow home">
+        willowfellow<span class="wordmark-dot">.</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link active" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="home.html#about">About Me</a>
+        <a class="nav-link" href="home.html#contact">Contact</a>
+      </nav>
+
+      <span class="header-index" aria-hidden="true">Visual archive / 01</span>
+    </header>
+
+    <main class="work-page">
+      <nav class="work-breadcrumb" aria-label="Breadcrumb">
+        <a href="gallery.html">← Back to gallery</a>
+        <span class="work-number">01 / 06</span>
+      </nav>
+
+      <div class="work-layout">
+        <figure class="work-display">
+          <img id="work-image" src="assets/work-01.jpg" alt="">
+          <figcaption id="work-figcaption">
+            Willowfellow / Collection 01
+          </figcaption>
+        </figure>
+
+        <article class="work-info">
+          <p class="eyebrow">Collection 01 / Photographic studies</p>
+          <h1 id="work-title">Stillness</h1>
+          <p class="work-lede" id="work-lede"></p>
+
+          <div class="work-note">
+            <h2>About this work</h2>
+            <p id="work-description"></p>
+          </div>
+
+          <section class="work-story" aria-labelledby="work-story-heading">
+            <h2 id="work-story-heading">The story</h2>
+            <p id="work-story"></p>
+          </section>
+
+          <dl class="work-facts">
+            <div>
+              <dt>Work</dt>
+              <dd id="work-number-fact"></dd>
+            </div>
+            <div>
+              <dt>Year</dt>
+              <dd>2026</dd>
+            </div>
+            <div>
+              <dt>Medium</dt>
+              <dd>Digital image</dd>
+            </div>
+            <div>
+              <dt>Series</dt>
+              <dd>Quiet Studies</dd>
+            </div>
+          </dl>
+
+          <nav class="work-navigation" aria-label="Browse artworks">
+            <a id="previous-work" href="gallery.html">← Previous</a>
+            <a id="next-work" href="gallery.html">Next →</a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+    <footer class="collection-footer">
+      <span>© <span class="year">2026</span> Willowfellow</span>
+      <a href="gallery.html">View all works ↗</a>
+    </footer>
+  </div>
+</body>
+</html>

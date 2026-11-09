@@ -1,0 +1,395 @@
+/* Gallery page */
+
+.collection-page {
+  padding: 0 clamp(24px, 3vw, 48px) 120px;
+}
+
+.collection-intro {
+  min-height: 450px;
+  max-width: 790px;
+  padding: 105px 0 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.collection-intro h1 {
+  margin: 24px 0 22px;
+  font: 400 clamp(42px, 4.7vw, 72px) / 1.08 Georgia, serif;
+  letter-spacing: -0.055em;
+}
+
+.collection-intro h1 em {
+  font-weight: 400;
+}
+
+.collection-intro > p:last-child {
+  max-width: 540px;
+  margin: 0;
+  color: #625e5a;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.collection-bar {
+  margin-bottom: 30px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cbc7c2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #55514d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 22px;
+  row-gap: 48px;
+}
+
+.collection-card {
+  min-width: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.collection-frame {
+  height: clamp(230px, 24vw, 350px);
+  padding: clamp(25px, 3vw, 47px);
+  background: #f4f3f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.collection-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 4px 14px #00000012;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.collection-card:nth-child(2n) .collection-frame img {
+  width: 64%;
+  height: 84%;
+  object-fit: cover;
+}
+
+.collection-card:nth-child(3n) .collection-frame img {
+  width: 82%;
+  height: 51%;
+  object-fit: cover;
+}
+
+.collection-card:hover img,
+.collection-card:focus-visible img {
+  transform: scale(1.045);
+}
+
+.collection-caption {
+  margin-top: 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.collection-caption strong {
+  font-weight: 600;
+}
+
+.collection-caption > span {
+  color: #77716d;
+  text-align: right;
+}
+
+.collection-footer {
+  padding: 25px clamp(24px, 3vw, 48px) 45px;
+  border-top: 1px solid #cbc7c2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #5a5550;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.collection-footer a {
+  text-decoration: none;
+}
+
+.collection-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Individual artwork page */
+
+.work-page {
+  padding: 0 clamp(24px, 4vw, 64px) 120px;
+}
+
+.work-breadcrumb {
+  padding: 38px 0 25px;
+  border-bottom: 1px solid #d2cfca;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #635e59;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-breadcrumb a {
+  text-decoration: none;
+}
+
+.work-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.work-layout {
+  padding-top: 52px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(330px, 0.75fr);
+  gap: clamp(50px, 6vw, 110px);
+  align-items: start;
+}
+
+.work-display {
+  margin: 0;
+}
+
+.work-display img {
+  width: 100%;
+  max-height: 690px;
+  display: block;
+  object-fit: contain;
+}
+
+.work-display figcaption {
+  margin-top: 12px;
+  color: #77716d;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-info {
+  padding-top: 16px;
+}
+
+.work-info h1 {
+  margin: 26px 0;
+  font: 400 clamp(56px, 5.5vw, 90px) / 0.98 Georgia, serif;
+  letter-spacing: -0.07em;
+}
+
+.work-lede {
+  max-width: 440px;
+  margin: 0 0 38px;
+  color: #44403d;
+  font: 22px / 1.42 Georgia, serif;
+}
+
+/* About this work comes first */
+
+.work-note {
+  padding: 0 0 34px;
+}
+
+.work-note h2 {
+  margin: 0 0 17px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.work-note p,
+.work-story p {
+  max-width: 460px;
+  margin: 0;
+  color: #5d5853;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Story comes second */
+
+.work-story {
+  padding: 31px 0 43px;
+  border-top: 1px solid #d7d2cc;
+}
+
+.work-story h2 {
+  margin: 0 0 16px;
+  font: 400 30px / 1.15 Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+/* Artwork information comes last */
+
+.work-facts {
+  margin: 0 0 44px;
+  border-top: 1px solid #bcb7b1;
+}
+
+.work-facts div {
+  padding: 13px 0;
+  border-bottom: 1px solid #dedbd7;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.work-facts dt,
+.work-facts dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.work-facts dt {
+  color: #77716d;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.work-facts dd {
+  text-align: right;
+}
+
+.work-navigation {
+  padding-top: 18px;
+  border-top: 1px solid #bcb7b1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.work-navigation a {
+  font: 18px Georgia, serif;
+  text-decoration: none;
+}
+
+.work-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .collection-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .collection-frame {
+    height: 300px;
+  }
+
+  .collection-caption {
+    flex-wrap: wrap;
+  }
+
+  .work-layout {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 760px) {
+  .collection-intro {
+    min-height: 340px;
+    padding: 65px 0 55px;
+  }
+
+  .collection-intro h1 {
+    font-size: clamp(41px, 8vw, 64px);
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 14px;
+  }
+
+  .collection-frame {
+    height: 270px;
+    padding: 26px;
+  }
+
+  .work-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 30px;
+  }
+
+  .work-info {
+    padding-top: 0;
+  }
+
+  .work-info h1 {
+    margin: 20px 0;
+  }
+
+  .work-display img {
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 470px) {
+  .collection-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .collection-intro {
+    min-height: 320px;
+  }
+
+  .collection-grid {
+    gap: 28px 10px;
+  }
+
+  .collection-frame {
+    height: 205px;
+    padding: 19px;
+  }
+
+  .collection-caption {
+    font-size: 10px;
+  }
+
+  .collection-caption > span {
+    text-align: left;
+  }
+
+  .work-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .work-navigation a {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-frame img {
+    transition: none;
+  }
+}

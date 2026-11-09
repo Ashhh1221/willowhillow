@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the Willowfellow photography collection.">
+  <title>Gallery — Willowfellow</title>
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script defer src="home.js"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="home.html" aria-label="Willowfellow home">
+        willowfellow<span class="wordmark-dot">.</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a class="nav-link" href="home.html">Home</a>
+        <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="about.html">About Me</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <span class="header-index" aria-hidden="true">Visual archive / 01</span>
+    </header>
+
+    <main class="collection-page">
+      <section class="collection-intro" aria-labelledby="collection-title">
+        <p class="eyebrow">Home / Gallery</p>
+        <h1 id="collection-title">
+          Photo collections —<br>
+          <em>an archive of moments</em>
+        </h1>
+        <p>Six photographic studies of people, places, light, and the space in between.</p>
+      </section>
+
+      <div class="collection-bar">
+        <span>Collection 01</span>
+        <span>All works / 06</span>
+      </div>
+
+      <section class="collection-grid" aria-label="Photographs">
+        <a class="collection-card" href="work.html?id=stillness">
+          <span class="collection-frame">
+            <img src="gallery/F2.jpg"
+                 alt="A figure seen from behind in a quiet interior">
+          </span>
+          <span class="collection-caption">
+            <strong>Stillness</strong>
+            <span>Portrait study / 2026</span>
+          </span>
+        </a>
+
+        <a class="collection-card" href="work.html?id=open-air">
+          <span class="collection-frame">
+            <img src="gallery/P14.jpg"
+                 alt="A distant figure in an open landscape">
+          </span>
+          <span class="collection-caption">
+            <strong>Open Air</strong>
+            <span>Landscape study / 2026</span>
+          </span>
+        </a>
+
+        <a class="collection-card" href="work.html?id=afternoon">
+          <span class="collection-frame">
+            <img src="gallery/P20.jpg"
+                 alt="A portrait in soft window light">
+          </span>
+          <span class="collection-caption">
+            <strong>Afternoon</strong>
+            <span>Portrait study / 2026</span>
+          </span>
+        </a>
+
+        <a class="collection-card" href="work.html?id=passage">
+          <span class="collection-frame">
+            <img src="gallery/P21.jpg"
+                 alt="A figure walking beside a modern building">
+          </span>
+          <span class="collection-caption">
+            <strong>Passage</strong>
+            <span>Urban study / 2026</span>
+          </span>
+        </a>
+
+        <a class="collection-card" href="work.html?id=gesture">
+          <span class="collection-frame">
+            <img src="gallery/P5.jpg"
+                 alt="Hands and fabric in shadow">
+          </span>
+          <span class="collection-caption">
+            <strong>Gesture</strong>
+            <span>Detail study / 2026</span>
+          </span>
+        </a>
+
+        <a class="collection-card" href="work.html?id=elsewhere">
+          <span class="collection-frame">
+            <img src="gallery/ret 3.jpg"
+                 alt="A side profile outdoors in the wind">
+          </span>
+          <span class="collection-caption">
+            <strong>Elsewhere</strong>
+            <span>Portrait study / 2026</span>
+          </span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="collection-footer">
+      <span>© <span class="year">2026</span> Willowfellow</span>
+      <a href="home.html">Back to home ↗</a>
+    </footer>
+  </div>
+</body>
+</html>
