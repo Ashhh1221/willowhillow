@@ -41,7 +41,7 @@ const works = [
     description:
       "Light cuts across the building as a figure passes through the frame. The image balances the geometry of the space with a brief human presence.",
     story:
-      "A figure walks along a concrete façade. For an instant, the moving body interrupts the building’s fixed lines and sharp patches of sunlight. The image is about that brief meeting of person and place."
+      "Past the little 'tickets' sign, the night carried that warm, half-dreaming hush you only find when time slows down. The carousel spun like a song from years ago, golden and tender, while the Ferris wheel rose high into the dark like a quiet wish. I took the shot because the warmth in the frame felt like a memory already beginning to miss itself—something fragile I wanted to keep."
   },
   {
     id: "gesture",
